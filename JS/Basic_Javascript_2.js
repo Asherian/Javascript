@@ -6,5 +6,6 @@ function changeColor(newColor) {
 function myFunction() {
     var sentence = "It's important to find balance to stay healthy.";
     sentence += " Our bodies are worth putting the effort into";
-    document.getElementById("food").innerhtml = sentence;
+    document.getElementById("Concatenate").innerHTML = sentence;
 }
+
