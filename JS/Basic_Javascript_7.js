@@ -15,9 +15,41 @@ Add_num_2();
 Add_num_Error();
 
 function date_function() {
-    if (new Date().getHours() > 18) {
+    if (new Date().getHours() < 18) {
         document.getElementById("Greets").innerHTML = "How are you today?";
     }
+//    else (new Date().getHours() > 18){
+//        document.getElementById("Greets").innerHTML = "Hope it was a good day."
+//    }//else statement pg 135
 }
-var MD= new Date();
-document.getElementById("Whatif").innerHTML = "Happy March!";
+function if_what() {
+    if (2 > 1) {
+       document.getElementById("Say_It").innerHTML = "Is this true?"
+   }
+}
+
+function Number_Compare() {
+    twelve= document.getElementById("twelve").value;
+    if (twelve > 12) {
+            Vote = "What a large number!";
+    }
+    else {
+        Vote = "A great number!";
+    }
+    document.getElementById("Response").innerHTML = Vote;
+}
+
+function Time_function() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }
+    else if (Time > 12 == Time < 18) {
+        Reply = "It is the afternoon.";
+    }
+    else {
+        Reply = "It is evenin time.";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
+}//Assign pg 138 - as written.
