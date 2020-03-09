@@ -73,9 +73,6 @@ for (i = 0; i < 5; i++) {
     text += "The number is " + i + "<br>";
   }
 document.getElementById("chall199").innerHTML = text;
-function loop_break() {
-
-}
 
 var Author= ["Steven Brust", "Lois McMasters Bujold", "Terry Prachett", "Brandon Sanderson", "Robert A Heinlein"];
 var AuthContent= "";
