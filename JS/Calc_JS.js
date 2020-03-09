@@ -51,7 +51,7 @@ function Handle_Operator(Next_Operator) {
     Calculator.operator = Next_Operator;
 }
 
-const Perform_calculation = {
+const Perform_Calculation = {
     "/": (First_Operand, Second_Operand) => First_Operand/Second_Operand,
     "*": (First_Operand, Second_Operand) => First_Operand*Second_Operand,
     "+": (First_Operand, Second_Operand) => First_Operand+Second_Operand,
@@ -71,7 +71,7 @@ function Update_Display() {
     display.value = Calculator.Display_Value;
 }
 Update_Display();
-const keys= document.querySelector(".calculator-keys");
+const keys = document.querySelector(".calculator-keys");
 keys.addEventListener("click", (event) => {
     const { target } = event;
     if (!target.matches("button")) {
